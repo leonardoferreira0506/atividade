@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-tab3',
+  templateUrl: 'tab3.page.html',
+  styleUrls: ['tab3.page.scss'],
+})
+export class Tab3Page {
+  email: string;
+  password: string;
+
+  constructor() {}
+
+  onLogin() {
+    console.log('Email:', this.email);
+    console.log('Senha:', this.password);
+    // Aqui você pode adicionar a lógica para autenticar o usuário
+  }
+
+  onRegister() {
+    // Navegar para a tela de cadastro
+    console.log('Navegando para a tela de cadastro...');
+    // Aqui você pode adicionar a lógica para navegar para a tela de cadastro
+  }
+}
